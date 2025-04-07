@@ -1,0 +1,7 @@
+/* ----- GLOBAL ----- */
+:root {
+    /* Easings & Other Variables */
+    --ease-default: cubic-bezier(.91,0,.06,1)
+}
+
+/* ----- NAVIGATION ----- */
