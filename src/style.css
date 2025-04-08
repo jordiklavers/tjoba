@@ -1,7 +1,24 @@
 /* ----- GLOBAL ----- */
 :root {
-    /* Easings & Other Variables */
-    --ease-default: cubic-bezier(.91,0,.06,1)
+  /* Easings & Other Variables */
+  --ease-default: cubic-bezier(0.91, 0, 0.06, 1);
 }
 
 /* ----- NAVIGATION ----- */
+
+/* Nav Dropdown */
+@media (hover: hover) and (pointer: fine) {
+  .nav_dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s var(--ease-default);
+  }
+
+  .nav_dropdown-w:hover .nav_dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.45s var(--ease-default);
+  }
+}
