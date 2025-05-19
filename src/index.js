@@ -14,11 +14,10 @@ function initNavMenu() {
   console.log("Nav Menu");
 
   // Mobile
-  if (navigator.userAgent.includes("Mobile")) {
-    console.log("mobile");
+  if (window.innerWidth < 480) {
     // Menu
     let menuToggle = $(".nav_mobile-btn");
-    let menu = $(".nav_links");
+    let menu = $(".mobile_nav");
 
     menuToggle.click(function () {
       console.log("click");
